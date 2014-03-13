@@ -248,6 +248,7 @@ Start with `susy`.
 
 ```scss
 $sum: susy(3, 2, 7);
+```
 
 If you want static grids,
 you can multiply the results
