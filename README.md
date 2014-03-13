@@ -1,9 +1,8 @@
 su
 ==
 
-DIY Grid Engine -
-the simplest form of [Susy](http://susy.oddbird.net).
-We used this engine to build Susy,
+DIY Sass grid engine.
+We use this engine for [Susy][Susy],
 but you can use it to build any grid system you want.
 
 Make up your own,
@@ -12,6 +11,7 @@ or port existing tools like
 [zurb][zurb], [neat][neat], [zen][zen],
 [blueprint][blueprint], [960gs][960gs], etc.
 
+[Susy]:http://susy.oddbird.net
 [oocss]: http://oocss.org/
 [singularity]: http://singularity.gs/
 [zurb]: http://foundation.zurb.com/
