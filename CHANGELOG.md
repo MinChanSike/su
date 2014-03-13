@@ -5,7 +5,7 @@ Su Changelog
 ----------------
 
 - Copy core math files from Susy.
-- Rename core math functions and deprecate the old names.
+- Rename core math functions.
 
   + `column-count()` => `susy-count()`
   + `column-sum()` => `susy-sum()`
