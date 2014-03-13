@@ -1,0 +1,14 @@
+/* Susy Tests */
+/* ========== */
+
+@import "su";
+@import "true";
+
+$default-module-output: css;
+
+@import "maps";
+@import "settings";
+@import "validation";
+@import "grid";
+
+@include report;
