@@ -8,16 +8,17 @@ but you can use it to build any grid system you want.
 
 Make up your own,
 or port existing tools like
-`oocss`_, `singularity`_, `zurb`_, `neat`_, `zen`_,
-`blueprint`_, `960gs`_, etc.
+[oocss][oocss], [singularity][singularity],
+[zurb][zurb], [neat][neat], [zen][zen],
+[blueprint][blueprint], [960gs][960gs], etc.
 
-.. _oocss: http://oocss.org/
-.. _singularity: http://singularity.gs/
-.. _zurb: http://foundation.zurb.com/
-.. _neat: http://neat.bourbon.io/
-.. _zen: http://zengrids.com/
-.. _blueprint: http://www.blueprintcss.org/
-.. _960gs: http://960.gs/
+[oocss]: http://oocss.org/
+[singularity]: http://singularity.gs/
+[zurb]: http://foundation.zurb.com/
+[neat]: http://neat.bourbon.io/
+[zen]: http://zengrids.com/
+[blueprint]: http://www.blueprintcss.org/
+[960gs]: http://960.gs/
 
 
 Settings
