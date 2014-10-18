@@ -1,6 +1,5 @@
 source "http://rubygems.org"
 
-gem "sass", "3.3"
-gem "compass", "1.0.0.alpha.19"
-gem "true", "~> 0.2"
-gem "su", :path => ".."
+gemspec :path => '../'
+gem "compass", "~> 1.0"
+gem "true", "~> 1.0"

@@ -2,14 +2,19 @@
 // =========
 
 @mixin _susy-please-compare($map1, $map2, $message) {
-  @each $key in map-keys($map1) {
-    $value: map-get($map1, $key);
-    $value2: map-get($map2, $key);
+  // RubySass can do a simple comparison
+  @if (one: 1, two: 2) == (one: 1, two: 2) {
+    @include assert-equal($map1, $map2, $message);
+  } @else {
+    @each $key in map-keys($map1) {
+      $value: map-get($map1, $key);
+      $value2: map-get($map2, $key);
 
-    @if type-of($value) == map {
-      @include _susy-please-compare($value, $value2, $message);
-    } @else {
-      @include assert-equal($value, $value2, $message);
+      @if type-of($value) == map {
+        @include _susy-please-compare($value, $value2, $message);
+      } @else {
+        @include assert-equal($value, $value2, $message);
+      }
     }
   }
 }

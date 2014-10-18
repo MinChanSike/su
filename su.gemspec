@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
 
   # Author Information
-  s.authors = ["Eric Suzanne"]
+  s.authors = ["Eric M Suzanne"]
   s.email = ["eric@oddbird.net"]
   s.homepage = "http://ericam.github.com/su/"
 
@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.files = Dir.glob("lib/*.*")
-  s.files += Dir.glob("sass/**/*.*")
+  s.files += Dir.glob("stylesheets/**/*.*")
   s.files += Dir.glob("templates/**/*.*")
   s.files += ["CHANGELOG.md", "LICENSE", "README.md", "VERSION"]
 
@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Su", "--main", "README.md"]
 
   dependencies = {
-    "sass" => "~> 3.3.0"
+    "sass"    => ["~> 3.4"]
   }
   # Project Dependencies
   if s.respond_to? :specification_version then
