@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/ericam/su/issues"
   },
-  "homepage": "https://github.com/ericam/su"
+  "homepage": "https://github.com/ericam/su",
+  "devDependencies": {
+    "node-sass": "^1.0.1"
+  }
 }
