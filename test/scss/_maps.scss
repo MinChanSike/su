@@ -3,7 +3,9 @@
 
 @mixin _susy-please-compare($map1, $map2, $message) {
   // RubySass can do a simple comparison
-  @if (one: 1, two: 2) == (one: 1, two: 2) {
+  $m1: (one: 1, two: 2);
+  $m2: (two: 2, one: 1);
+  @if $m1 == $m2 {
     @include assert-equal($map1, $map2, $message);
   } @else {
     @each $key in map-keys($map1) {
