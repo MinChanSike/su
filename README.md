@@ -272,3 +272,15 @@ $fluid: percentage($sum / $context);
 
 That's all it takes.
 Now go build yourself a grid system!
+
+Contribute
+----------
+
+These directions are a work in progress.
+
+1. Clone the repo and cd into the root of the project
+1. ``bundle install``
+1. ``git submodules init``
+1. ``git submodules update``
+
+
