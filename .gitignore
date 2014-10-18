@@ -6,3 +6,4 @@ su-*.gem
 pkg/
 *.sublime-*
 docs/_build/
+node_modules/
