@@ -1,6 +1,19 @@
 // Map Tests
 // =========
 
+@mixin _susy-please-compare($map1, $map2, $message) {
+  @each $key in map-keys($map1) {
+    $value: map-get($map1, $key);
+    $value2: map-get($map2, $key);
+
+    @if type-of($value) == map {
+      @include _susy-please-compare($value, $value2, $message);
+    } @else {
+      @include assert-equal($value, $value2, $message);
+    }
+  }
+}
+
 @include test-module('Map Helpers') {
   $map: (
     one: (
@@ -46,7 +59,7 @@
       ),
       two: cheese,
     );
-    @include assert-equal($test, $expect,
+    @include _susy-please-compare($test, $expect,
       'Returns map with deep value adjusted.');
 
     $test: _susy-deep-set($map, one, monkey, three, test);
@@ -63,7 +76,7 @@
       ),
       two: cheese,
     );
-    @include assert-equal($test, $expect,
+    @include _susy-please-compare($test, $expect,
       'Set deep value even in new key path.');
   }
 
