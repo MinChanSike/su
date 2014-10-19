@@ -1,3 +1,0 @@
-[submodule "stylesheets"]
-	path = stylesheets
-	url = git://github.com/ericam/susy-engine.git
