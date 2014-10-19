@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* Susy Tests */
+/* ========== */
+/* ### Map Helpers ---------- */
+/* - truncate-list (1 Assertions, 1 Passed, 0 Failed) */
+/* - deep-get (1 Assertions, 1 Passed, 0 Failed) */
+/* - deep-set (2 Assertions, 2 Passed, 0 Failed) */
+/* - deep-has-key (2 Assertions, 2 Passed, 0 Failed) */
+/*
+*/
+/* 4 Tests: */
+/*  - 4 Passed */
+/*  - 0 Failed */
+/*
+*/
+/* ### General Settings ---------- */
+/* - susy-defaults (2 Assertions, 2 Passed, 0 Failed) */
+/*
+*/
+/* 1 Tests: */
+/*  - 1 Passed */
+/*  - 0 Failed */
+/*
+*/
+/* ### Grid Validation ---------- */
+/* - [mixin] valid-columns (4 Assertions, 4 Passed, 0 Failed) */
+/* - [mixin] valid-gutters (2 Assertions, 2 Passed, 0 Failed) */
+/*
+*/
+/* 2 Tests: */
+/*  - 2 Passed */
+/*  - 0 Failed */
+/*
+*/
+/* ### Column Math ---------- */
+/* - [function] is-symmetrical() (3 Assertions, 3 Passed, 0 Failed) */
+/* - [function] susy-count() (2 Assertions, 2 Passed, 0 Failed) */
+/* - [function] susy-sum() — symmetrical (4 Assertions, 4 Passed, 0 Failed) */
+/* - [function] susy-sum() — asymmetrical (3 Assertions, 3 Passed, 0 Failed) */
+/* - [function] susy-slice() (3 Assertions, 3 Passed, 0 Failed) */
+/* - [function] susy() (2 Assertions, 2 Passed, 0 Failed) */
+/*
+*/
+/* 6 Tests: */
+/*  - 6 Passed */
+/*  - 0 Failed */
+/*
+*/
