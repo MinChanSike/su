@@ -1,18 +1,29 @@
 // Map Tests
 // =========
 
-@mixin _susy-please-compare($map1, $map2, $message) {
-  @each $key in map-keys($map1) {
-    $value: map-get($map1, $key);
-    $value2: map-get($map2, $key);
 
-    @if type-of($value) == map {
-      @include _susy-please-compare($value, $value2, $message);
-    } @else {
-      @include assert-equal($value, $value2, $message);
+@mixin _susy-please-compare($map1, $map2, $message) {
+  $test1: (one: 1, two: 2);
+  $test2: (two: 2, one: 1);
+
+  @if $test1 == $test2 {
+    // Ruby Sass is happy to help
+    @include assert-equal($map1, $map2, $message);
+  } @else {
+    // LibSass needs you to ask nicely
+    @each $key in map-keys($map1) {
+      $value: map-get($map1, $key);
+      $value2: map-get($map2, $key);
+
+      @if type-of($value) == map {
+        @include _susy-please-compare($value, $value2, $message);
+      } @else {
+        @include assert-equal($value, $value2, $message);
+      }
     }
   }
 }
+
 
 @include test-module('Map Helpers') {
   $map: (
